@@ -1,0 +1,49 @@
+
+  .contacts {
+    align-items: center;
+    margin-left: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
+    & .item {
+        align-items: center;
+        
+        & + .item {
+            margin-left: 30px;
+        }
+    }
+}
+
+.contacts-imail {
+  color: $title-text-color;
+  align-items: center;
+    & svg {
+        width: 16px;
+        height: 12px;
+        fill: currentColor;
+        margin-right: 10px;
+    }
+    &:hover,
+    &:focus{
+        color: $active-text-color;
+    }
+}
+  .contacts-phone {
+    color: $title-text-color;
+    align-items: center;
+  
+        & svg {
+        width: 10px;
+        height: 16px;
+        margin-right: 10px;
+        fill: currentColor;
+    }
+  
+        &:hover,
+        &:focus {
+            color: $active-text-color;
+        }
+}
